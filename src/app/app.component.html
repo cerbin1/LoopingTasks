@@ -8,4 +8,13 @@
   </div>
   <app-organize-notes *ngIf="organizingNotesChose"></app-organize-notes>
   <hr>
+  <div class="row">
+    <button class="col-md-6 offset-3 btn btn-primary"
+            (click)="chooseBackupSoftComponent()"
+            *ngIf="!backupSoftChose">
+      {{backupSoftComponentName}}
+    </button>
+  </div>
+  <app-backup-soft *ngIf="backupSoftChose"></app-backup-soft>
+  <hr>
 </div>

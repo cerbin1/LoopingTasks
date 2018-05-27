@@ -3,11 +3,13 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {OrganizeNotesComponent} from './organize-notes/organize-notes.component';
+import { BackupSoftComponent } from './backup-soft/backup-soft.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OrganizeNotesComponent
+    OrganizeNotesComponent,
+    BackupSoftComponent
   ],
   imports: [
     BrowserModule

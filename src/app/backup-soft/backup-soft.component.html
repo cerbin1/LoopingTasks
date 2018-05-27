@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-xl-10 offset-1 text-center">
+    Links:
+    <br>
+    <a class="" href="https://takeout.google.com/settings/takeout" target="_blank">Google backup</a>
+
+  </div>
+</div>
+<div class="row">
+  <div class="btn-group-vertical col-xl-10 offset-1">
+    <div class="btn"
+         *ngFor="let element of tasksName; let index = index"
+         (click)="changeTaskStatus(index)"
+         [ngClass]="clickedTask[index] ? 'btn-success' : 'btn-danger'">
+      {{element}}
+    </div>
+  </div>
+</div>
+<div class="row">
+  <h1 class="col-xl-10 offset-1 text-center"
+      [ngClass]="{'text-success':allTasksClicked()}">
+    {{getTasksCompletionStatus()}}
+  </h1>
+</div>
