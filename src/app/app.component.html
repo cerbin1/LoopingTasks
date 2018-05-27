@@ -17,4 +17,13 @@
   </div>
   <app-backup-soft *ngIf="backupSoftChose"></app-backup-soft>
   <hr>
+  <div class="row">
+    <button class="col-md-6 offset-3 btn btn-primary"
+            (click)="chooseBackupHardComponent()"
+            *ngIf="!backupHardChose">
+      {{backupHardComponentName}}
+    </button>
+  </div>
+  <app-backup-hard *ngIf="backupHardChose"></app-backup-hard>
+  <hr>
 </div>

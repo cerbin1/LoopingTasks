@@ -4,12 +4,14 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {OrganizeNotesComponent} from './organize-notes/organize-notes.component';
 import { BackupSoftComponent } from './backup-soft/backup-soft.component';
+import { BackupHardComponent } from './backup-hard/backup-hard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OrganizeNotesComponent,
-    BackupSoftComponent
+    BackupSoftComponent,
+    BackupHardComponent
   ],
   imports: [
     BrowserModule
