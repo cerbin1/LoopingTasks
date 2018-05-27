@@ -1,8 +1,16 @@
-<div class="btn-group-vertical col-xl-10 offset-1">
-  <div class="btn"
-       *ngFor="let element of elements; let index = index"
-       (click)="changeStatusOfElement(index)"
-       [ngClass]="statuses[index] ? 'btn-success' : 'btn-danger'">
-    {{element}}
+<div class="row">
+  <div class="btn-group-vertical col-xl-10 offset-1">
+    <div class="btn"
+         *ngFor="let element of elements; let index = index"
+         (click)="changeStatusOfElement(index)"
+         [ngClass]="statuses[index] ? 'btn-success' : 'btn-danger'">
+      {{element}}
+    </div>
   </div>
+</div>
+<div class="row">
+  <h1 class="col-xl-10 offset-1 text-center"
+      [ngClass]="{'text-success':allTasksClicked()}">
+    {{getTasksCompletionStatus()}}
+  </h1>
 </div>

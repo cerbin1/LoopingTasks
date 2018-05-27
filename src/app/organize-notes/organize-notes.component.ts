@@ -19,4 +19,16 @@ export class OrganizeNotesComponent implements OnInit {
   changeStatusOfElement(index) {
     this.statuses[index] = !this.statuses[index];
   }
+
+  getNumberOfClickedTasks(): number {
+    return this.statuses.filter(status => status === true).length;
+  }
+
+  getTasksCompletionStatus() {
+    return this.getNumberOfClickedTasks() + '/' + this.statuses.length;
+  }
+
+  allTasksClicked(): boolean {
+    return this.getNumberOfClickedTasks() === this.statuses.length;
+  }
 }
