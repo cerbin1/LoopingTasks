@@ -9,7 +9,7 @@ import {OrganizeNotesComponent} from './organize-notes/organize-notes.component'
 })
 export class AppComponent {
   organizingNotesChose = false;
-  organizeNotesComponentName = OrganizeNotesComponent.taskName;
+  organizeNotesComponentName = OrganizeNotesComponent.assignmentName;
 
   chooseOrganizingNotesComponent() {
     this.organizingNotesChose = true;

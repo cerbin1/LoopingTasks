@@ -6,9 +6,9 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./organize-notes.component.css']
 })
 export class OrganizeNotesComponent implements OnInit {
-  static taskName = 'Organizing Notes';
-  elements = ['Sticky notes', 'Google Drive', 'Phone notes', 'Phone Chrome Tabs', 'Empty OneNote Temp'];
-  statuses = [false, false, false, false, false];
+  static assignmentName = 'Organizing Notes';
+  tasksName = ['Sticky notes', 'Google Drive', 'Phone notes', 'Phone Chrome Tabs', 'Empty OneNote Temp'];
+  clickedTask = [false, false, false, false, false];
 
   constructor() {
   }
@@ -16,19 +16,19 @@ export class OrganizeNotesComponent implements OnInit {
   ngOnInit() {
   }
 
-  changeStatusOfElement(index) {
-    this.statuses[index] = !this.statuses[index];
+  changeTaskStatus(index) {
+    this.clickedTask[index] = !this.clickedTask[index];
   }
 
   getNumberOfClickedTasks(): number {
-    return this.statuses.filter(status => status === true).length;
+    return this.clickedTask.filter(status => status === true).length;
   }
 
   getTasksCompletionStatus() {
-    return this.getNumberOfClickedTasks() + '/' + this.statuses.length;
+    return this.getNumberOfClickedTasks() + '/' + this.clickedTask.length;
   }
 
   allTasksClicked(): boolean {
-    return this.getNumberOfClickedTasks() === this.statuses.length;
+    return this.getNumberOfClickedTasks() === this.clickedTask.length;
   }
 }

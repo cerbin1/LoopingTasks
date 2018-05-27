@@ -1,9 +1,9 @@
 <div class="row">
   <div class="btn-group-vertical col-xl-10 offset-1">
     <div class="btn"
-         *ngFor="let element of elements; let index = index"
-         (click)="changeStatusOfElement(index)"
-         [ngClass]="statuses[index] ? 'btn-success' : 'btn-danger'">
+         *ngFor="let element of tasksName; let index = index"
+         (click)="changeTaskStatus(index)"
+         [ngClass]="clickedTask[index] ? 'btn-success' : 'btn-danger'">
       {{element}}
     </div>
   </div>
