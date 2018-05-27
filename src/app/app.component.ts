@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+
+import {OrganizeNotesComponent} from './organize-notes/organize-notes.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  organizingNotesChose = false;
+  organizeNotesComponentName = OrganizeNotesComponent.taskName;
+
+  chooseOrganizingNotesComponent() {
+    this.organizingNotesChose = true;
+  }
 }
