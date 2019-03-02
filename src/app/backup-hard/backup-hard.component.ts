@@ -7,7 +7,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class BackupHardComponent implements OnInit {
   static assignmentName = 'Backup hard';
-  tasksName = ['OneNote whole Notebook as doc', 'PC files Desktop', 'PC files folder Data',
+  tasksName = ['OneNote whole Notebook as doc', 'PC files folder Data',
     'Google Calendar', 'Google Chrome (all)', 'Google Contacts', 'Google Gmail', 'Google Drive'];
   clickedTask = [false, false, false, false, false, false, false, false];
 

@@ -7,7 +7,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class BackupSoftComponent implements OnInit {
   static assignmentName = 'Backup soft';
-  tasksName = ['OneNote Temp', 'OneNote Ideas', 'OneNote Business', 'OneNote Dates',
+  tasksName = ['OneNote Quick', 'OneNote Biznes', 'OneNote TODO', 'OneNote Temp',
     'Google Calendar', 'Google Chrome (Bookmarks)'];
   clickedTask = [false, false, false, false, false, false];
 
