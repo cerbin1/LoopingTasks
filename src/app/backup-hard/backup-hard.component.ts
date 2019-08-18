@@ -6,10 +6,17 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./backup-hard.component.css']
 })
 export class BackupHardComponent implements OnInit {
-  static assignmentName = 'Backup hard';
-  tasksName = ['OneNote whole Notebook as doc', 'PC files folder Data',
-    'Google Calendar', 'Google Chrome (all)', 'Google Contacts', 'Google Gmail', 'Google Drive'];
-  clickedTask = [false, false, false, false, false, false, false, false];
+  static assignmentName = 'Backup Hard';
+  tasksName = ['OneNote whole notebook as doc',
+    'Folder Documents (Ubuntu)',
+    'Folder Dane (Dysk D)',
+    'Chrome Passwords Export',
+    'Google Calendar',
+    'Google Chrome (all)',
+    'Google Contacts',
+    'Google Gmail',
+    'Google Drive'];
+  clickedTask = [false, false, false, false, false, false, false, false, false];
 
   constructor() {
   }

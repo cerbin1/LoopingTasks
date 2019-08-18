@@ -7,8 +7,12 @@ import {Component, OnInit} from '@angular/core';
 })
 export class OrganizeNotesComponent implements OnInit {
   static assignmentName = 'Organizing Notes';
-  tasksName = ['Sticky notes', 'Google Drive', 'Phone notes', 'Phone Chrome Tabs', 'Empty OneNote Temp'];
-  clickedTask = [false, false, false, false, false];
+  tasksName = ['Onenote Temp',
+    'Telefon Chrome',
+    'Telefon notatki',
+    'Todoist Skrzynka odbiorcza'];
+  clickedTask = [false, false, false, false];
+
 
   constructor() {
   }
