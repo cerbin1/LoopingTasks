@@ -366,7 +366,10 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 var OrganizeNotesComponent = /** @class */ (function () {
     function OrganizeNotesComponent() {
-        this.tasksName = ['Onenote Temp', 'Telefon Chrome', 'Telefon notatki', 'Todoist Skrzynka odbiorcza'];
+        this.tasksName = ['Onenote Temp',
+            'Telefon Chrome',
+            'Telefon notatki',
+            'Todoist Skrzynka odbiorcza'];
         this.clickedTask = [false, false, false, false];
     }
     OrganizeNotesComponent.prototype.ngOnInit = function () {
