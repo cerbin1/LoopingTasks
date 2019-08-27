@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OrganizeNotesComponent } from './organize-notes.component';
+import { LoopingTasksComponent } from './looping-tasks.component';
 
-describe('OrganizeNotesComponent', () => {
-  let component: OrganizeNotesComponent;
-  let fixture: ComponentFixture<OrganizeNotesComponent>;
+describe('LoopingTasksComponent', () => {
+  let component: LoopingTasksComponent;
+  let fixture: ComponentFixture<LoopingTasksComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OrganizeNotesComponent ]
+      declarations: [ LoopingTasksComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OrganizeNotesComponent);
+    fixture = TestBed.createComponent(LoopingTasksComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

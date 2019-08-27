@@ -1,0 +1,20 @@
+{
+  "loopingTasks": [
+    {
+      "title": "Backup Soft",
+      "tasks": [
+        "OneNote Temp",
+        "Telefon Notatki",
+        "Todoist Skrzynka Odbiorcza"
+      ]
+    },
+    {
+      "title": "Backup Hard",
+      "tasks": [
+        "asd",
+        "qwe",
+        "zxc"
+      ]
+    }
+  ]
+}

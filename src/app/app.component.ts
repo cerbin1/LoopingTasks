@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
 
 import {OrganizeNotesComponent} from './organize-notes/organize-notes.component';
-import {BackupSoftComponent} from "./backup-soft/backup-soft.component";
-import {BackupHardComponent} from "./backup-hard/backup-hard.component";
+import {BackupSoftComponent} from './backup-soft/backup-soft.component';
+import {BackupHardComponent} from './backup-hard/backup-hard.component';
 
 @Component({
   selector: 'app-root',
