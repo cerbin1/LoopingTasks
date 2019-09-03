@@ -10,17 +10,22 @@ import {forEach} from '@angular/router/src/utils/collection';
 })
 export class LoopingTasksComponent implements OnInit {
   private jsonURL = 'assets/db.json';
+  private tasks;
 
   constructor(
     private http: HttpClient
   ) {
     this.getJSON().subscribe(data => {
-      console.log(data['loopingTasks']);
-      for (let i = 0; i < data['loopingTasks'].length; i++) {
-        console.log('tytul:' + data['loopingTasks'][i]['title']);
+      const tasks = data['loopingTasks'];
+      console.log(tasks);
+      for (let i = 0; i < tasks.length; i++) {
+        const title = tasks[i]['title'];
+        this.tasks[i].title =  title;
+        console.log('tytul:' + title);
         console.log('Taski:');
-        for (let j = 0; j < data['loopingTasks'][i]['tasks'].length; j++) {
-          console.log(data['loopingTasks'][i]['tasks'][j]);
+        const tasks = tasks[i]['tasks'];
+        for (let j = 0; j < tasks.length; j++) {
+          console.log(tasks[j]);
         }
       }
       // TODO: zrobić komponent looping tasks zeby byl ogolny i przyjmowal poszczegolne rodzaje zadan i taski z pliku. sprobowac powsadzac te rzeczy z jsona do zmiennych i potem w html to rozpisac
